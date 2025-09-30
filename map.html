@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карта 7 чудес України</title>
+  <meta name="description" content="Інтерактивна карта України з позначками семи чудес та їх розташуванням." />
+  <meta name="keywords" content="карта України, чудеса України, інтерактивна карта, пам’ятки, подорожі" />
+  <link rel="icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header small-gap">
+    <div class="header-left">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Логотип" class="logo" />
+     </a>
+    </div>
+    <div class="header-center">
+      <h1 class="site-title">Космічне представлення 7 чудес України</h1>
+    </div>
+    <div class="header-right">
+     <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </button>
+    </div>
+    
+    <nav id="main-nav" class="main-nav" aria-label="Головна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="planets.html">Чудеса</a></li>
+        <li><a href="map.html" class="active">Карта</a></li>
+        <li><a href="collage.html">Фотоколаж</a></li>
+        <li><a href="animation.html">Анімація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="parallax">
+    <div class="layer layer--stars" id="layerStars" aria-hidden="true"></div>
+  </div>
+
+<main class="container">
+  <section class="map-hero">
+    <h1 class="glow-text">Карта з чудесами України</h1>
+
+    <div class="content-image">
+      <img src="images/map.png" alt="Карта України з чудесами">
+    </div>
+
+    <p class="lead-text">Оберіть одне з чудес України, і ви побачите його розташування на інтерактивній карті.</p>
+
+    <div class="map-section">
+      <div class="buttons">
+        <button data-place="sofievka">Софіївка (Умань)</button>
+        <button data-place="lavra">Києво-Печерська лавра</button>
+        <button data-place="hortytsia">Хортиця (Запоріжжя)</button>
+        <button data-place="kamianets">Кам’янець-Подільська фортеця</button>
+        <button data-place="khersones">Херсонес Таврійський (Севастополь)</button>
+        <button data-place="khotyn">Хотинська фортеця</button>
+        <button data-place="sofiyivka">Софійський собор (Київ)</button>
+      </div>
+      <div id="map"></div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

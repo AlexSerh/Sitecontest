@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анімація — 7 чудес України</title>
+  <meta name="description" content="Перегляньте анімацію про подорож крізь 7 чудес України у космосі." />
+  <meta name="keywords" content="анімація, чудеса України, відео, космос, культура, mp4" />
+  <link rel="icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header small-gap">
+    <div class="header-left">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Логотип" class="logo" />
+     </a>
+    </div>
+    <div class="header-center">
+      <h1 class="site-title">Космічне представлення 7 чудес України</h1>
+    </div>
+    <div class="header-right">
+     <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </button>
+    </div>
+    
+    <nav id="main-nav" class="main-nav" aria-label="Головна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="planets.html">Чудеса</a></li>
+        <li><a href="map.html">Карта</a></li>
+        <li><a href="collage.html">Фотоколаж</a></li>
+        <li><a href="animation.html" class="active">Анімація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="parallax">
+    <div class="layer layer--stars" id="layerStars" aria-hidden="true"></div>
+  </div>
+
+  <main class="container">
+    <section>
+      <h1>Космічна подорож крізь 7 чудес України</h1>
+      <div class="content-video">
+        <video controls preload="metadata" poster="images/preview.jpg">
+          <source src="images/animation.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотоколаж — 7 чудес України</title>
+  <meta name="description" content="Фотоколаж, який об’єднує всі 7 чудес України в одній композиції." />
+  <meta name="keywords" content="фотоколаж, чудеса України, архітектура, культура, історія, зображення" />
+  <link rel="icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header small-gap">
+    <div class="header-left">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Логотип" class="logo" />
+     </a>
+    </div>
+    <div class="header-center">
+      <h1 class="site-title">Космічне представлення 7 чудес України</h1>
+    </div>
+    <div class="header-right">
+     <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </button>
+    </div>
+    
+    <nav id="main-nav" class="main-nav" aria-label="Головна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="planets.html">Чудеса</a></li>
+        <li><a href="map.html">Карта</a></li>
+        <li><a href="collage.html" class="active">Фотоколаж</a></li>
+        <li><a href="animation.html">Анімація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="parallax">
+    <div class="layer layer--stars" id="layerStars" aria-hidden="true"></div>
+  </div>
+
+  <main class="container">
+    <section class="collage-section">
+      <h1 class="glow-text">Фотоколаж семи чудес України</h1>
+      <p class="lead-text">
+        Цей колаж поєднує у собі архітектурні, природні та історичні пам’ятки України.
+      </p>
+
+      <div class="content-image collage-image">
+        <img src="images/collage.jpg" alt="Фотоколаж 7 чудес України">
+        <div class="collage-caption">
+          <p><strong>На фотоколажі зображено:</strong> Києво-Печерська лавра, Софійський собор, Хортиця, Кам’янець-Подільська та Хотинська фортеці, Софіївка, Херсонес Таврійський.</p>
+        </div>
+      </div>
+
+      <p class="final-message">
+        <em>Відчуй красу України</em>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

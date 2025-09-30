@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Планет та 7 Чудес України</title>
+  <meta name="description" content="Дослідіть 7 зображень планет, кожне з яких символізує одне з семи чудес України." />
+  <meta name="keywords" content="планети, чудеса України, космос, історія, мальовані планети" />
+  <link rel="icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header small-gap">
+    <div class="header-left">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Логотип" class="logo" />
+     </a>
+    </div>
+    <div class="header-center">
+      <h1 class="site-title">Космічне представлення 7 чудес України</h1>
+    </div>
+    <div class="header-right">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <nav id="main-nav" class="main-nav" aria-label="Головна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="planets.html" class="active">Чудеса</a></li>
+        <li><a href="map.html">Карта</a></li>
+        <li><a href="collage.html">Фотоколаж</a></li>
+        <li><a href="animation.html">Анімація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="parallax">
+    <div class="layer layer--stars" id="layerStars" aria-hidden="true"></div>
+  </div>
+
+  <main class="container">
+    <section>
+      <h1>7 планет і 7 чудес України</h1>
+      <p>Кожна планета має своє українське чудо:</p>
+
+      <div class="content-gallery">
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/jupiter_khotyn.png" alt="Хотинська фортеця на Юпітері" class="planet-img">
+          </div>
+          <figcaption>1. Юпітер – Хотинська фортеця.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/saturn_kamyanets.png" alt="Кам’янець-Подільська фортеця на Сатурні" class="planet-img">
+          </div>
+          <figcaption>2. Сатурн – Кам’янець-Подільська фортеця.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/uran_sophia.png" alt="Софія Київська на Урані" class="planet-img">
+          </div>
+          <figcaption>3. Уран – Софія Київська.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/neptune_lavra.png" alt="Києво-Печерська лавра на Нептуні" class="planet-img">
+          </div>
+          <figcaption>4. Нептун – Києво-Печерська лавра.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/venus_khortytsia.png" alt="Острів Хортиця на Венері" class="planet-img">
+          </div>
+          <figcaption>5. Венера – Острів Хортиця.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/mars_chersonesus.png" alt="Херсонес на Марсі" class="planet-img">
+          </div>
+          <figcaption>6. Марс – Херсонес.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="planet-wrapper">
+            <img src="images/mercury_sofiyivka.png" alt="Софіївка на Меркурії" class="planet-img">
+          </div>
+          <figcaption>7. Меркурій – Софіївка.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
